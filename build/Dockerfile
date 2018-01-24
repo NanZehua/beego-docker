@@ -4,9 +4,6 @@ MAINTAINER nanzehua nanzehua@163.com
 
 EXPOSE 8080
 
-#RUN echo "Huawei@123" > paas_pwd.txt
-#RUN echo "Huawei@123" >> pass_pwd.txt
-
 RUN groupadd paas
 RUN useradd -d /home/paas -g paas -s /bin/sh -m paas
 #RUN passwd paas < paas_pwd.txt
